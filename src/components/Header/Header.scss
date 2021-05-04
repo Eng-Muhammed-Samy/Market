@@ -1,0 +1,50 @@
+// variable concept in sass
+$mainBackground: #FBF9F1;
+$mainColor: gray;
+$mainHover:#6EA9B8;
+$iconsColor:#2A6049;
+.navbar{
+    background-color: $mainBackground;
+    // padding: 35px 40px 50px 120px;
+    height: 15vh;
+    // nestting concept in sass
+    div{
+        ul{
+            li{
+                a{      
+                    color: $mainColor;
+                    transition: all .3s;
+                    &:hover{
+                        color: $mainHover;
+                    }
+                }
+            }
+        }
+    };
+    li{
+        display: flex;
+        align-items: center;
+        a{
+            
+            span{                
+                i{
+                    font-size: 30px;
+                    background-color: $iconsColor;
+                    border-radius: 50%;
+                    padding: 5px;
+                    color: white;
+                    margin-right: 5px;
+                }
+            }
+            i{
+                width: 50px;
+                height: 50px;
+                font-size: 30px; 
+                background-color: $iconsColor;
+                    border-radius: 50%;
+                    padding: 5px;
+                    color: white;
+            }
+        }
+    }
+    }
